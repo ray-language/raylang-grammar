@@ -1,0 +1,40 @@
+{
+  "name": "raylang-grammar",
+  "displayName": "raylang syntax",
+  "description": "TextMate grammar for the raylang programming language (.ray).",
+  "version": "0.1.0",
+  "publisher": "ray-language",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ray-language/raylang-grammar"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "raylang",
+        "aliases": [
+          "raylang",
+          "Raylang"
+        ],
+        "extensions": [
+          ".ray"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "raylang",
+        "scopeName": "source.raylang",
+        "path": "./grammars/raylang.tmLanguage.json"
+      }
+    ]
+  }
+}
